@@ -1,0 +1,323 @@
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.content{
+    padding: 16px;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: rgba(10, 10, 10, 0.864);
+}
+.text-heading{
+    color: #0F75AB;
+}
+
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn1{
+    padding: 1%;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary1{
+    background-color: #9CEA86 ;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+.btn-primary1:hover{
+    color: white;
+    background-color: #76D55B;
+}
+
+
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 30px;
+    left: 36%;
+}
+
+
+fieldset{
+    width: 30%;
+    height: 30%;
+    border: 1px solid white;
+    margin: auto;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 80px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/* CSS for banner Section */
+
+.banner{
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 43%;
+    float: left;
+    margin: 1%;
+    padding: 2%;
+}
+
+
+/* CSS for work */
+
+.work{
+    background-color: #ececec;
+    padding: 2% 0;
+}
+
+.work-category{
+    background-color: #ececec;
+    padding: 1% 0;
+}
+
+.work-result{
+    background-color: #ececec;
+    padding: 9% 0;
+}
+.work-contact{
+    background-color: #ececec;
+    padding: 2% 0;
+}
+
+.work-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+.work-box1{
+    width: 30%;
+    margin: auto;
+    padding: 2%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.work-img{
+    width: 20%;
+    float: left;
+}
+
+.work-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+
+
+.detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.input-responsive{
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 2%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .work{
+        padding: 20% 0;
+    }
+
+    .work-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+}
+
+.radio {
+	padding: 4px;
+	border-radius: 3px;
+	position: relative;
+}
+
+.radio input {
+	width: auto;
+	height: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 4px 8px;
+    border: #000000 1px solid;
+	color: #000000;
+	font-size: 14px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	transition: all 100ms linear;
+}
+
+.radio input:checked {
+	background-image: linear-gradient(180deg, #95d891, #74bbad);
+	color: #fff;
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #79485f7a;
+}
+
+.radio input:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
