@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+   {% include "head.html" %}
+   {% load macros %}
+
+<body>
+    {% loadmacros  "radio_button.html" %}
+    <!-- Navbar Section Starts -->
+    {% include "navbar.html" %}
+    
+    <!-- Navbar Section Ends -->
+
+
+    <section class="work">
+        <div class="container">
+            <h2 class="text-center">Rate the sound</h2>
+            <p class="text-center">[ Rate the audio fragment on a 1 to 10 scale
+                <br> where 1 corresponded to “inferior” and 10 represented “excellent” quality.]</p>
+                 <br>
+                <form method="post">          
+                    <fieldset>
+                        <legend>For Bilingual</legend>
+                        {% comment %} <div class="input-label">Person 1</div> {% endcomment %}
+                        {% comment %} <input type="number" name="person1" placeholder="E.g. 1-10" class="input-responsive" max="10" min="1" required>
+
+                        <div class="input-label">Person 2</div>
+                        <input type="number" name="person2" class="input-responsive" max="10" min="1" required>
+
+                        <div class="input-label">Person 3</div>
+                        <input type="number" name="person3" class="input-responsive" max="10" min="1" required>
+
+                        <div class="input-label">Person 4</div>
+                        <input type="number" name="person4" class="input-responsive" max="10" min="1" required>
+
+                        <div class="input-label">Person 5</div>
+                        <input type="number" name="person5" class="input-responsive" max="10" min="1" required>
+
+                        <div class="input-label">Person 6</div>
+                        <input type="number" name="person6" class="input-responsive" max="10" min="1" required>
+
+                        <div class="input-label">Person 7</div>
+                        <input type="number" name="person7" class="input-responsive" max="10" min="1" required> {% endcomment %}
+                        {% use_macro radio_generator %}
+                        <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+                    </fieldset>
+                </form> 
+            
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+   
+
+
+    <!-- social Section Starts-->
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends  -->
+
+    <!-- footer Section Starts  -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved. Designed By <a href="#">Group 2</a></p>
+        </div>
+    </section>
+    <!-- footer Section Ends  -->
+    
+    
+
+</body>
+
+</html>

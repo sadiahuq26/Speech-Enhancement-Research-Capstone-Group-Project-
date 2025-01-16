@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+   {% include "head.html" %}
+
+<body>
+    <!-- Navbar Section Starts-->
+    {% include "navbar.html" %}
+    <!-- Navbar Section Ends -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+            }
+
+        .row {
+            display: flex;
+        }
+        .column {
+            flex: 50%;
+            float: left;
+            padding: 10px;
+           
+        }
+        .vl {
+            border-left: 4px solid white;
+            height: 370px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 23%;
+        }
+
+    </style>
+
+<section class="work-result">
+    <div class="row">
+        <div class="column">
+            <div class="container">
+                    <h2 class="text-center text-white">Prefered Sound level for monolingual input</h2>
+        
+                        
+                        <div class="work-box1">
+                            {{res}}
+                        </div>
+             
+            </div>
+        </div>
+        <div class="vl">
+
+        </div>
+        <div class="column">
+            
+            
+                <h2 class="text-center text-white">Sound level</h2>
+                <div class="text-center">
+                    <p style="text-align: center;">
+                       Here the results shows 0db or -10db or ins or 10db or 20db (decibel) sound levels 
+                       <br> contaminated with bubble noise(bn) or white noise(wn).
+                        <br>
+                      ins stands for infinity (no noise).
+                      <br>
+                      For instance, 20bn means 20db(decibel) sound contaminated with bubble noise.
+                    </p>
+                </div>
+        </div>
+    
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+    <!-- social Section Starts -->
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends -->
+
+    <!-- footer Section Starts  -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved. Designed By <a href="#">Group 2</a></p>
+        </div>
+    </section>
+    <!-- footer Section Ends  -->
+
+</body>
+</html>

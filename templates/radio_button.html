@@ -1,0 +1,14 @@
+{% load macros %}
+
+    {% macro radio_generator %}
+    <div class="radio">
+    {% for i in person %}
+    <div class="input-label">Person {{i}}</div>
+    {% for j in rating %}
+    <input label="{{j}}" type="radio" id="{{j}}" name="Person {{i}}" value="{{j}}" required>  
+    {% endfor %}
+    <br><br>
+    {% endfor %}
+    <br>
+    </div>
+    {% endmacro %}
